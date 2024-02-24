@@ -1,0 +1,23 @@
+.home-page {
+    margin: 30px 60px;
+
+    .img-top {
+        position: relative;
+        img {
+            border-radius: 25px;
+            width: 100%;
+        }
+
+        p {
+            margin: auto;
+            color: white;
+            font-size: 48px;
+            font-weight: 500;
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            left: 35%;
+            font-family: Montserrat;
+        }
+    }
+}
