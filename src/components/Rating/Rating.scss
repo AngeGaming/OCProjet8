@@ -1,0 +1,14 @@
+.stars {
+    color: #ff6060;
+    height: 36px;
+    @media screen and (max-width: 768px) {
+      height: 18px;
+    }
+  }
+  .starsGrey {
+    color: #e3e3e3;
+    height: 36px;
+    @media screen and (max-width: 768px) {
+      height: 18px;
+    }
+  }
