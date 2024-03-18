@@ -53,7 +53,7 @@ const Location = () => {
                     </div>
                     <div className="loc-content-down">
                         <Collapsis title="Description" description={location.description}/>
-                        {/* <Collapsis title="Équipement" description={location.equipments}></Collapsis> */}
+                        <Collapsis title="Équipement" description={location.equipments}></Collapsis>
                     </div>
                 </div>
             </div>

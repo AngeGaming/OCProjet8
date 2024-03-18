@@ -7,7 +7,7 @@ const Collapsis = ({ title, description }) => {
     const handleToggle = () => {
         setIsVisible(!isVisible);
     };
-    console.log(typeof description === 'string');
+    
     return (
         <div className={`colapsis ${isVisible ? "visible" : ""}`}>
             <div className="headColapsis" onClick={handleToggle}>
@@ -19,12 +19,12 @@ const Collapsis = ({ title, description }) => {
                 />
             </div>
             <div className={`paragraph ${isVisible ? "animate" : ""}`}>
-                typeof description === 'string' && <p>{description}</p>
-                Array.isArray(description) && <ul>
+                {typeof description === 'string' && <p>{description}</p>}
+                {Array.isArray(description) && <ul>
                     {description.map((equip, index) => (
                         <li key={index}>{equip}</li>
                     ))}
-                </ul>
+                </ul>}
             </div>
         </div>
     );

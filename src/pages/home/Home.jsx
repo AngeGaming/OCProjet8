@@ -7,17 +7,18 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <div className="home-page">
-            <div className="img-top">
-                <img src={imgTop} alt="Bord de mer" />
-                <p>Chez vous, partout et ailleurs</p>
+            <div className="banner">
+                <img src={imgTop} alt="montagnes" className="bannerImg" />
+                <div className="mask"></div>
+                <h1>Chez vous, partout et ailleurs</h1>
             </div>
             <div className="background">
-        {logementsData.map((logement) => (
-          <Link to={`/location/${logement.id}`} key={logement.id}>
-            <Card key={logement.id} logement={logement} />
-          </Link>
-        ))}
-      </div>
+                {logementsData.map((logement) => (
+                    <Link to={`/location/${logement.id}`} key={logement.id}>
+                        <Card key={logement.id} logement={logement} />
+                    </Link>
+                ))}
+            </div>
         </div>
     );
 }
